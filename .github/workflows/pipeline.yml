@@ -21,7 +21,7 @@ jobs:
         uses: awslabs/amazon-app-runner-deploy@main # Deploy app runner service
         with:
           service: app-runner-git-deploy-service
-          source-connection-arn: arn:aws:apprunner:us-east-1:710235054459:service/app-runner/c0ed044cee544f68803f711a595e8311
+          source-connection-arn: arn:aws:codestar-connections:us-east-1:710235054459:connection/e3992473-913a-4cb3-b879-592e213d9f1d
           repo: https://github.com/${{ github.repository }}
           branch: ${{ github.ref }}
           runtime: NODEJS_12
